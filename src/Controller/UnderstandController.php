@@ -9,4 +9,3 @@ class UnderstandController extends AbstractController
         return $this->twig->render('understand/understand.html.twig');
     }
 }
-
