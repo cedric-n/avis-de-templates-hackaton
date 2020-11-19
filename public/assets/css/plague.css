@@ -1,13 +1,23 @@
-section h1 {
+.section-stop-plague {
+    background-color: var(--color-light);
+    padding-bottom: var(--spacing4);
+}
+
+.section-stop-plague h1 {
+    font-family: var(--title-font);
     text-align: center;
-    margin: var(--spacing4) auto;
+    padding-top: var(--spacing4);
+    padding-bottom: var(--spacing4);
+    color: var(--color-dark);
 }
 
-section p {
-    margin: var(--spacing3) auto;
+.section-stop-plague p {
+    font-family: var(--text-font);
+    margin-bottom: var(--spacing3);
+    font-size: 1.3rem;
 }
 
-section img {
+.section-stop-plague img {
     width: 100%;
     margin: auto;
 }
