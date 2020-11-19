@@ -22,7 +22,7 @@
     color: var(--text-color);
 }
 
-img{
+.navbar img{
     border-radius: 16px;
     height: 150px;
 }

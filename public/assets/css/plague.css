@@ -1,4 +1,5 @@
 .section-stop-plague {
+    margin-top: var(--spacing1);
     background-color: var(--color-light);
     padding-bottom: var(--spacing4);
 }
@@ -6,7 +7,7 @@
 .section-stop-plague h1 {
     font-family: var(--title-font);
     text-align: center;
-    padding-top: var(--spacing4);
+    padding-top: var(--spacing5);
     padding-bottom: var(--spacing4);
     color: var(--color-dark);
 }
