@@ -1,6 +1,16 @@
 .container {
     border: solid var(--text-color);
     background-color: rgba(169,146,125, 0.4);
-    margin-top: var(--spacing4);
+    margin-top: calc(var(--spacing4)*4 );
     margin-bottom: var(--spacing4);
+
+}
+p a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 800;
+}
+a:hover {
+    color: var(--hover);
+    text-decoration: none;
 }
