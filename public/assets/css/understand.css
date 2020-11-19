@@ -1,0 +1,4 @@
+.container {
+    border: solid var(--text-color);
+    background-color: rgba var(--text-color) 0.4;
+}
