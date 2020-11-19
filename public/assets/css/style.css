@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+
+:root {
+    --color-light: F2F4F3;
+    --color-dark: 22333B;
+    --h1-font-size: 5rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --title-font: 'Cinzel', sans-serif;
+    --text-font: 'Bad Script', sans-serif;
+    --spacing: 8px;
+    --spacing2: calc(var(--spacing) * 2);
+    --spacing3: calc(var(--spacing) * 4);
+    --spacing4: calc(var(--spacing) * 8);
+    --spacing5: calc(var(--spacing) * 16);
+}
