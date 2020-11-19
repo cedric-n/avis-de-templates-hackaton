@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&display=swap');
 
-
 :root {
     --color-light: #F2F4F3;
     --color-dark: #22333B;
@@ -11,7 +10,7 @@
     --h2-font-size: 1.7rem;
     --h3-font-size: 1.5rem;
     --text-font-size: 1.3rem;
-    --footer-font-size: 0.85rem;
+    --footer-font-size: 1rem;
     --footer-title-size: 1.35rem;
     --title-font: 'Cinzel', sans-serif;
     --text-font: 'Bad Script', sans-serif;
@@ -20,11 +19,15 @@
     --spacing3: calc(var(--spacing) * 4);
     --spacing4: calc(var(--spacing) * 8);
     --spacing5: calc(var(--spacing) * 16);
+    --hover: orange;
+    --nav: calc(var(--spacing4)*4 );
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--text-font);
+    font-size: var(--text-font-size);
+    margin: 0;
 }
 
 header {
@@ -35,11 +38,6 @@ header {
 html {
     font-size: 100%;
 }
-
-body {
-    margin: 0;
-}
-
 .title-light, .text-light {
     color: var(--color-light);
 }
@@ -52,25 +50,19 @@ h1 {
     font-family: var(--title-font);
     padding-top: var(--spacing3);
     padding-bottom: var(--spacing4);
-
+    text-align: center;
 }
 
 h2 {
     font-size: var(--h2-font-size);
     font-family: var(--title-font);
     padding-top: var(--spacing);
-    padding-bottom: calc(var(--spacing3)*2);
+    padding-bottom: var(--spacing2);
 }
 
 h3 {
     font-size: var(--h3-font-size);
     font-family: var(--title-font);
     padding-top: var(--spacing);
-    padding-bottom: var(--spacing2);
-}
-
-p {
-    margin-top: var( --spacing2);
-    font-family: var(--text-font);
-    font-size: var(--text-font-size);
+    padding-bottom: var(--spacing);
 }

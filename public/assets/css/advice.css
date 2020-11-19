@@ -1,15 +1,16 @@
 .container {
-    margin-top: var(--nav);
     border: solid var(--text-color);
     background-color: rgba(169,146,125, 0.4);
+    margin-top: var(--nav);
     margin-bottom: var(--spacing4);
-    padding: var(--spacing3);
-}
 
-p {
-    text-align: justify;
 }
-
-a {
+p a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 800;
+}
+a:hover {
+    color: var(--hover);
     text-decoration: none;
 }

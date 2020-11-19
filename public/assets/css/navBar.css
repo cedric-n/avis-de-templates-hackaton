@@ -1,16 +1,15 @@
 .navbar {
     background-color:var(--color-dark) ;
-    top: 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    padding: var(--spacing2);
     z-index: 1;
 }
-
 .nav-link{
     color: var(--text-color);
     font-family: var(--text-font);
     font-size: var(--footer-title-size);
+    font-weight: bold;
 }
 
 .nameApp{
@@ -18,11 +17,17 @@
     font-family: var(--text-font);
     font-size:  calc(var(--footer-title-size) * 2);
 }
+
 .nav-link:hover{
     color: var(--text-color);
 }
 
-.navbar img{
+.d-lg-inline-block img{
     border-radius: 16px;
     height: 150px;
+}
+.collapse a:hover {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
 }
