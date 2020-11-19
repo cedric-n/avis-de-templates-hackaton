@@ -53,7 +53,7 @@ h2 {
     font-size: var(--h2-font-size);
     font-family: var(--title-font);
     padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
+    padding-bottom: calc(var(--spacing3)*2);
 }
 
 h3 {
