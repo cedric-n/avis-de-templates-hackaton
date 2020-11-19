@@ -1,4 +1,15 @@
 .container {
     border: solid var(--text-color);
-    background-color: rgba var(--text-color) 0.4;
+    background-color: rgba(169,146,125, 0.4);
+    margin-top: var(--spacing4);
+    margin-bottom: var(--spacing4);
+    padding: var(--spacing3);
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
 }
