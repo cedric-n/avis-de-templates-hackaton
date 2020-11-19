@@ -1,12 +1,10 @@
 .navbar {
     background-color:var(--color-dark) ;
-    top: 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    padding: var(--spacing2);
     z-index: 1;
 }
-
 .nav-link{
     color: var(--text-color);
     font-family: var(--text-font);
@@ -21,7 +19,6 @@
 .nav-link:hover{
     color: var(--text-color);
 }
-
 img{
     border-radius: 16px;
     height: 150px;
