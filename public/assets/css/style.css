@@ -23,7 +23,6 @@
 * {
     box-sizing: border-box;
     font-family: var(--text-font);
-    margin-top: var( --spacing2);
     font-size: var(--text-font-size);
 }
 

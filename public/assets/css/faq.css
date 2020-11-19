@@ -7,10 +7,20 @@
     padding: var(--spacing3);
 }
 
+article, .btn-group {
+    margin: var(--spacing3);
+}
+
 p {
     text-align: justify;
 }
 
 a {
     text-decoration: none;
+    color: var(--color-dark);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--hover);
 }
