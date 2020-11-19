@@ -2,7 +2,6 @@
     margin-top: var(--nav);
     border: solid var(--text-color);
     background-color: rgba(169,146,125, 0.4);
-    margin-top: var(--spacing5);
     margin-bottom: var(--spacing4);
     padding: var(--spacing3);
 }
