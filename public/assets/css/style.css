@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
-
 :root {
     --color-light: #F2F4F3;
     --color-dark: #22333B;
@@ -24,6 +23,8 @@
 * {
     box-sizing: border-box;
     font-family: var(--text-font);
+    margin-top: var( --spacing2);
+    font-size: var(--text-font-size);
 }
 
 html {
@@ -46,25 +47,19 @@ h1 {
     font-family: var(--title-font);
     padding-top: var(--spacing3);
     padding-bottom: var(--spacing4);
-
+    text-align: center;
 }
 
 h2 {
     font-size: var(--h2-font-size);
     font-family: var(--title-font);
     padding-top: var(--spacing);
-    padding-bottom: calc(var(--spacing3)*2);
+    padding-bottom: var(--spacing2);
 }
 
 h3 {
     font-size: var(--h3-font-size);
     font-family: var(--title-font);
     padding-top: var(--spacing);
-    padding-bottom: var(--spacing2);
-}
-
-p {
-    margin-top: var( --spacing2);
-    font-family: var(--text-font);
-    font-size: var(--text-font-size);
+    padding-bottom: var(--spacing);
 }
