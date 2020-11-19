@@ -5,10 +5,11 @@
 :root {
     --color-light: #F2F4F3;
     --color-dark: #22333B;
-    --h1-font-size: 5rem;
-    --h2-font-size: 1.75rem;
+    --text-color: #A9927D;
+    --h1-font-size: 4rem;
+    --h2-font-size: 1.7rem;
     --h3-font-size: 1.5rem;
-    --text-font-size: 1rem;
+    --text-font-size: 1.3rem;
     --footer-font-size: 0.85rem;
     --footer-title-size: 1.35rem;
     --title-font: 'Cinzel', sans-serif;
@@ -22,6 +23,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: var(--text-font);
 }
 
 html {
@@ -30,10 +32,6 @@ html {
 
 body {
     margin: 0;
-    margin-top: var( --spacing2);
-    font-family: var(--text-font);
-    font-size: var(--text-font-size);
-    background-color: var(--color-light);
 }
 
 .title-light, .text-light {
@@ -45,12 +43,28 @@ body {
 
 h1 {
     font-size: var(--h1-font-size);
+    font-family: var(--title-font);
+    padding-top: var(--spacing3);
+    padding-bottom: var(--spacing4);
+
 }
 
 h2 {
     font-size: var(--h2-font-size);
+    font-family: var(--title-font);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing3*2);
 }
 
 h3 {
     font-size: var(--h3-font-size);
+    font-family: var(--title-font);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing2);
+}
+
+p {
+    margin-top: var( --spacing2);
+    font-family: var(--text-font);
+    font-size: var(--text-font-size);
 }
