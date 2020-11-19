@@ -17,6 +17,11 @@
     font-family: var(--text-font);
     font-size:  calc(var(--footer-title-size) * 2);
 }
+
+.nav-link:hover{
+    color: var(--text-color);
+}
+
 .d-lg-inline-block img{
     border-radius: 16px;
     height: 150px;
