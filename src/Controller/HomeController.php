@@ -9,6 +9,8 @@
 
 namespace App\Controller;
 
+use App\Model\SicknessManager;
+
 class HomeController extends AbstractController
 {
     /**
@@ -21,6 +23,8 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Home/index.html.twig');
+        $info = new SicknessManager();
+        $data = $info->getApi();
+        return $this->twig->render('Home/index.html.twig', ['data' => $data]);
     }
 }
