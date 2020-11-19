@@ -29,6 +29,7 @@
 
 header {
     padding-bottom: var(--spacing5);
+    margin-bottom: var(--spacing4);
 }
 
 html {

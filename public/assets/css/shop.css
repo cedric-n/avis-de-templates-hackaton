@@ -1,0 +1,30 @@
+.section-shop {
+    background-color: var(--color-dark);
+}
+
+.section-shop h1 {
+    text-align: center;
+    color: var(--color-light);
+}
+
+.section-shop p {
+    text-align: center;
+    color: var(--color-light);
+}
+
+.card {
+    margin: var(--spacing3) var(--spacing2);
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card a {
+    margin-top: var(--spacing2);
+}

@@ -1,5 +1,5 @@
 .section-stop-plague {
-    margin-top: var(--spacing1);
+    margin-top: var(--spacing);
     background-color: var(--color-light);
     padding-bottom: var(--spacing4);
 }

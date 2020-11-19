@@ -1,5 +1,27 @@
 {% extends 'layout.html.twig' %}
 
-{% block contents %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/shop.css">
+{% endblock %}
 
+{% block content %}
+    <section class="section-shop">
+        <h1>Shop</h1>
+        <p>Vous trouverez ci-jpint une selection de nos meilleurs articles afin de faire face à la pandémie</p>
+        <p>Tout est gratuit jusqu'a la caisse !!!</p>
+        <div class="container">
+            <div class="row justify-content-between">
+                {% for item in items %}
+                    <div class="card col-11 col-md-3">
+                        <img class="card-img-top" src="/assets/images/{{ item.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.name }}</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary">Acheter</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 {% endblock %}
