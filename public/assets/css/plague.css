@@ -1,0 +1,13 @@
+section h1 {
+    text-align: center;
+    margin: var(--spacing4) auto;
+}
+
+section p {
+    margin: var(--spacing3) auto;
+}
+
+section img {
+    width: 100%;
+    margin: auto;
+}
