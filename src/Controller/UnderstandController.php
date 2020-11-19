@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Controller;
-
 
 class UnderstandController extends AbstractController
 {
@@ -11,3 +9,4 @@ class UnderstandController extends AbstractController
         return $this->twig->render('understand/understand.html.twig');
     }
 }
+
