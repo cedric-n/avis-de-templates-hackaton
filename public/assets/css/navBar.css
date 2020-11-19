@@ -19,7 +19,11 @@
 .nav-link:hover{
     color: var(--text-color);
 }
-img{
+.d-lg-inline-block img{
     border-radius: 16px;
     height: 150px;
+}
+.collapse a:hover {
+    color: var(--hover);
+    text-decoration: none;
 }
