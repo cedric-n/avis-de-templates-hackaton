@@ -50,7 +50,7 @@ html {
 h1 {
     font-size: var(--h1-font-size);
     font-family: var(--title-font);
-    padding-top: var(--spacing3);
+    padding-top: var(--spacing4);
     padding-bottom: var(--spacing4);
     text-align: center;
 }
@@ -58,14 +58,14 @@ h1 {
 h2 {
     font-size: var(--h2-font-size);
     font-family: var(--title-font);
-    padding-top: var(--spacing);
+    padding-top: var(--spacing3);
     padding-bottom: var(--spacing2);
 }
 
 h3 {
     font-size: var(--h3-font-size);
     font-family: var(--title-font);
-    padding-top: var(--spacing);
+    padding-top: var(--spacing2);
     padding-bottom: var(--spacing);
 }
 
