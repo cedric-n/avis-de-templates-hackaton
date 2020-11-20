@@ -1,7 +1,7 @@
 .titleLegal{
     font-family: var(--title-font);
     text-align: center;
-    padding-top: var(--spacing4);
+    padding-top: var(--spacing5);
     padding-bottom: var(--spacing4);
     color: var(--color-dark);
 }
@@ -21,7 +21,6 @@
 
 .container {
     border: solid var(--text-color);
-    background-color: rgba(169,146,125, 0.4);
     background-image: var(--background-img) ;
     margin-top: var(--nav);
     margin-bottom: var(--spacing4);
