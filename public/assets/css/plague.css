@@ -1,6 +1,5 @@
 .section-stop-plague {
     margin-top: var(--spacing);
-    background-color: var(--color-light);
     padding-bottom: var(--spacing4);
 }
 
@@ -21,4 +20,11 @@
 .section-stop-plague img {
     width: 100%;
     margin: auto;
+    padding-bottom: 10px;
+}
+.container {
+    border: solid var(--text-color);
+    background-image: var(--background-img) ;
+    margin-top: var(--nav);
+    margin-bottom: var(--spacing4);
 }
