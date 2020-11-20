@@ -40,22 +40,22 @@ class AdviceController extends AbstractController
     {
         $errors = [];
         if (empty($persons['firstname'])) {
-            $errors [] = 'Si tu met pas ton nom comment veux-tu qu\'on sache qui tu es ?';
+            $errors [] = 'Dit voir Michel, c\'est comment ton nom ?';
         }
         if (empty($persons['lastname'])) {
-            $errors [] = 'Faut mettre son prénom...';
+            $errors [] = 'Faut mettre ton prénom Roger...';
         }
         if (empty($persons['country'])) {
             $errors [] = 'Tu sais pas ou t\'habites ?';
         }
         if (empty($persons['date'])) {
-            $errors [] = 'Tu ne connais pas la date ?';
+            $errors [] = 'Ba alors Michel tu ne connais pas la date ?';
         }
         if (empty($persons['address'])) {
             $errors [] = 'Si tu veux l\'attestation il faut avoir une maison...';
         }
         if (empty($persons['choice'])) {
-            $errors [] = 'Il faut choisir le motif coco';
+            $errors [] = 'Quel est ton motif Roger ?' ;
         }
         return $errors ?? [];
     }
