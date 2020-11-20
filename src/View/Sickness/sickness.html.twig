@@ -1,0 +1,38 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/sickness.css">{% endblock %}
+
+{% block content %}
+
+    <section class="background">
+        <h1>Gestion de la "Peste Noire"</h1>
+        <div class="container-fluids">
+
+
+            <div class="row mx-1 d-flex flex-row justify-content-center ">
+                <div class="col-md-6 content-map d-flex justify-content-center">
+                    <img class="" src="/assets/images/map.jpg">
+                </div>
+
+                <div class="col-md-6 content-card d-flex flex-column ">
+                    {% for data in datas %}
+                        <div class="card {{ data.country }} border mx-auto">
+                            <div>
+                                <img class="icon" src="/assets/images/icon.jpg">
+                                <img  class="logo" src="/assets/images/the-middle-ages.jpg">
+                                <h2>{{ data.country }}</h2>
+                                <ul>
+                                    <li>Capital: {{ data.capital_city }}</li>
+                                    <li>Nombre confirmé: {{ data.confirmed }}</li>
+                                    <li>Nombre de rétablis: {{ data.recovered }}</li>
+                                    <li>Nombre de morts: {{ data.deaths }}</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
