@@ -16,6 +16,7 @@
 
 .card {
     margin: var(--spacing3) var(--spacing2);
+    padding-top: var(--spacing2);
     padding-left: 0;
     padding-right: 0;
     background-color: var(--color-light);
@@ -23,10 +24,34 @@
 }
 
 .card img {
+    padding-top: var(--spacing);
     width: 100%;
     display: block;
 }
 
 .card a {
+    margin-top: var(--spacing2);
+}
+
+.card-selection {
+    padding: var(--spacing3);
+    margin: var(--spacing3) var(--spacing2);
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.card-selection {
+    text-align: left;
+    padding-left: var(--spacing2);
+}
+
+.card-selection p {
+    margin-top: var(--spacing3);
+    text-align: center;
+}
+
+.card-selection label {
     margin-top: var(--spacing2);
 }
