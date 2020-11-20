@@ -4,6 +4,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: var(--box-shadow);
 }
 .nav-link{
     color: var(--text-color);

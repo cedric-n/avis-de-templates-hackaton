@@ -5,6 +5,8 @@
 .section-shop h1 {
     text-align: center;
     color: var(--color-light);
+    padding-top: var(--spacing5);
+    padding-bottom: var(--spacing4);
 }
 
 .section-shop p {

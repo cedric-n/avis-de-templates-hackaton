@@ -6,9 +6,9 @@
 
 {% block content %}
     <section class="section-shop">
-        <h1>Shop</h1>
-        <p>Vous trouverez ci-jpint une selection de nos meilleurs articles afin de faire face à la pandémie</p>
-        <p>Tout est gratuit jusqu'a la caisse !!!</p>
+        <h1>Boutique</h1>
+        <p>Vous trouverez ci-joint une selection de nos meilleurs articles afin de faire face à la pandémie</p>
+        <p>Tout est gratuit jusqu'à la caisse !!!</p>
         <div class="container">
             <div class="row justify-content-between">
                 {% for item in items %}
@@ -17,7 +17,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ item.name }}</h5>
                             <p class="card-text"></p>
-                            <a href="#" class="btn btn-primary">Acheter</a>
+                            <a href="/shop/choice/{{ item.id }}" class="btn btn-primary">Acheter</a>
                         </div>
                     </div>
                 {% endfor %}
