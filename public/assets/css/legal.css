@@ -4,6 +4,8 @@
     padding-top: var(--spacing4);
     padding-bottom: var(--spacing4);
     color: var(--color-dark);
+    font-size: var(--h1-font-size);
+
 }
 
 .text{
@@ -21,7 +23,7 @@
 
 .container {
     border: solid var(--text-color);
-    background-color: rgba(169,146,125, 0.4);
-    margin-top: 250px;
+    background-image: var(--background-img) ;
+    margin-top: var(--nav);
     margin-bottom: var(--spacing4);
 }
