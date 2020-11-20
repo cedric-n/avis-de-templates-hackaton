@@ -5,7 +5,7 @@
 }
 
 .footer h3{
-    margin-bottom: var(--spacing) ;
+    margin-bottom: var(--spacing);
     color: var(--text-color);
 }
 
