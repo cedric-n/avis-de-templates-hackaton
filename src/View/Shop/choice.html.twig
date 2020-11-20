@@ -15,6 +15,7 @@
                         <h5 class="card-title">{{ item.name }}</h5>
                         <p class="card-text"></p>
                         <ul>
+                        <ul>
                             {% for error in errors %}
                                 {{ error }}
                             {% endfor %}
@@ -28,7 +29,7 @@
                         <label for="firstname">Nom : </label>
                         <input type="text" name="firstname" id="firstname">
                         <p>adresse</p>
-                        <label for="street">rue / chemin ; </label>
+                        <label for="street">Rue / chemin ; </label>
                         <input type="text" name="street" id="street">
                         <label for="city">Ville / Château : </label>
                         <input type="text" name="city" id="city">

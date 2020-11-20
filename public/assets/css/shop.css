@@ -62,6 +62,18 @@
 }
 
 .card-selection a, button {
-    alialign: center;
+    vertical-align: center;
     margin-top: var(--spacing2);
+}
+
+.btn-primary {
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    color: var(--color-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-dark);
+    color: 2px solid var(--color-dark);
 }

@@ -8,7 +8,7 @@
     <section class="shop">
         <h2 class="title-light">Administration Boutique</h2>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="administration-button-add col-1 offset-7 offset-sm-9 offset-lg-10 mb-lg-5">
                     <button type="button" class="btn btn-primary button-light" data-toggle="modal" data-target="#modalForm{{ store.id }}">Ajouter</button>
                 </div>
@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <form action="/PrivateShop/add" method="post" enctype="multipart/form-data">
-                                        <input type="hidden" name="id" value="{{ competition.id }}">
+                                        <input type="hidden" name="id" value="{{ store.id }}">
                                         <ul>
                                         {% for error in errors %}
                                             <li>{{ error }}</li>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             {% for item in items %}
-                <div class="administration-block row justify-content-center">
+                <div class="administration-block row justify-content-between">
                     <div class="administration-picture col-12 mb-4 col-lg-4 mb-lg-5">
                         <img class="administration-img" src="/uploads/{{ item.url }}" alt="Image archive">
                     </div>
