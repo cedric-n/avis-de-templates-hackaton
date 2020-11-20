@@ -20,13 +20,11 @@ img {
     width: 100%;
     margin: auto;
 }
-.content-map {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .content-card {
-    height: 500px;
+    height: 667px;
+    display: flex;
 }
 .map {
 
@@ -39,8 +37,9 @@ img {
     margin-bottom: 8px;
 }
 
-.overflow-auto {
-    height: 800px; !important;
+.content-card card{
+    overflow-x: auto;
+    width: 500px;
 }
 
 .title-map {
@@ -63,11 +62,18 @@ img {
     align-items: center;
 }
 
+.row {
+    margin-bottom: var(--spacing4); !important;
+}
+
+h1 {
+
+}
+
 .content-main {
-    border-left: 8px solid black;
-    border-right: 8px solid black;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    margin-top: var(--nav);
+    border: solid var(--text-color);
+    background-color: rgba(169,146,125, 0.4);
+    margin-bottom: var(--spacing4);
+    background-image: var(--background-img) ;
 }
