@@ -22,7 +22,8 @@
     --box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
     --border-radius: 3px;
     --hover: orange;
-    --nav: calc(var(--spacing4)*4 );
+    --nav: calc(var(--spacing4)*1.5);
+    --background-img: url("https://image.freepik.com/photos-gratuite/fond-texture-vieux-papier-retro-vintage-grunge_47840-948.jpg")
 }
 
 * {
