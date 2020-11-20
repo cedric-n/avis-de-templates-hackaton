@@ -16,27 +16,22 @@ li {
     font-family: var(--text-font);
 }
 
-card {
-
-}
 img {
     width: 100%;
     margin: auto;
-    position: relative;
-    z-index: 3;
 }
 .content-map {
-    width: 1000px;
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-card {
-    width: 30%;
+    height: 500px;
 }
 .map {
-    margin: auto;
-    height: 1000px;
+
     object-fit: cover;
+    height: 80%;
 }
 
 .card {
@@ -45,59 +40,34 @@ img {
 }
 
 .overflow-auto {
-    height: 1000px; !important;
+    height: 800px; !important;
 }
 
-.icon-france {
+.title-map {
+    border: 1px solid black;
+    width: 800px;
+    text-align: center;
+    box-shadow: 0 0 8px 8px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: var(--spacing2);
+}
+
+.icon {
+    position: absolute;
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 500px;
-    left:460px;
-    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-spain {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 720px;
-    left:280px;
-    z-index: 4;
+.content-main {
+    border-left: 8px solid black;
+    border-right: 8px solid black;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-
-.icon-england {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 320px;
-    left:450px;
-    z-index: 4;
-}
-
-
-
-.icon-irland {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 320px;
-    left:320px;
-    z-index: 4;
-}
-
-.icon-portugal {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 730px;
-    left:195px;
-    z-index: 4;
-}
-
-.icon:hover {
-    width: 100px;
-    height: 100px;
-}
-
-

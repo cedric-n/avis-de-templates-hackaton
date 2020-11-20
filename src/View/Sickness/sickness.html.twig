@@ -2,25 +2,25 @@
 {% block stylesheet %}<link rel="stylesheet" href="/assets/css/sickness.css">{% endblock %}
 
 {% block content %}
-    <div class="container-lg">
+    <div class="container-lg container-md container-sm content-main">
         <div class="row mx-1 d-flex flex-row justify-content-center">
 
             <div class="content-map">
-                <img class="icon-portugal icon" src="/assets/images/icon.jpg">
-                <img class="icon-irland icon" src="/assets/images/icon.jpg">
-                <img class="icon-england icon" src="/assets/images/icon.jpg">
-                <img class="icon-spain icon" src="/assets/images/icon.jpg">
-                <img class="icon-france icon country" src="/assets/images/icon.jpg">
-                <img class="map" src="/assets/images/map.jpg">
+                <div class="title-map">
+                    <h1>Gestion de la "Peste Noire"</h1>
+                </div>
+                <div class="map">
+                    <img class="" src="/assets/images/map.jpg">
+                </div>
+
             </div>
 
             <div class="content-card overflow-auto country">
             {% for data in datas %}
                     <div class="card {{ data.country }} border w-50 mx-auto">
                         <div class="backgound-blason">
-                            {% for picture in pictures %}
-                                <img src="">
-                            {% endfor %}
+                            <img class="icon" src="/assets/images/icon.jpg">
+
                             <img src="/assets/images/manuscrit.jpg">
                         </div>
                         <h2>{{ data.country }}</h2>
