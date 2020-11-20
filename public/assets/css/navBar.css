@@ -1,0 +1,34 @@
+.navbar {
+    background-color:var(--color-dark) ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: var(--box-shadow);
+}
+.nav-link{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: var(--footer-title-size);
+    font-weight: bold;
+}
+
+.nameApp{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size:  calc(var(--footer-title-size) * 2);
+}
+
+.nav-link:hover{
+    color: var(--text-color);
+}
+
+.d-lg-inline-block img{
+    border-radius: 16px;
+    height: 150px;
+}
+.collapse a:hover {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
+}

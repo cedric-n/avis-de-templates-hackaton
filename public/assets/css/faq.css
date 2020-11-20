@@ -1,0 +1,28 @@
+.container {
+    margin-top: var(--nav);
+    border: solid var(--text-color);
+    background-color: rgba(169,146,125, 0.4);
+    margin-bottom: var(--spacing4);
+    padding: var(--spacing3);
+}
+
+.article, .btn-group {
+    margin-top: var(--spacing3);
+    margin-bottom: var(--spacing3);
+
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 800;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: var(--hover);
+}
