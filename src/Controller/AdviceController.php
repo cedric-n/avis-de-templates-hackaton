@@ -43,7 +43,7 @@ class AdviceController extends AbstractController
             $errors [] = 'Dit voir Michel, c\'est comment ton nom ?';
         }
         if (empty($persons['lastname'])) {
-            $errors [] = 'Faut mettre ton prénom Roger...';
+            $errors [] = 'Faut mettre ton prénom aussi Roger...';
         }
         if (empty($persons['country'])) {
             $errors [] = 'Tu sais pas ou t\'habites ?';
