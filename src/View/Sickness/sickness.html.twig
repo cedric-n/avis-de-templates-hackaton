@@ -1,35 +1,38 @@
 {% extends 'layout.html.twig' %}
-{% block stylesheet %}<link rel="stylesheet" href="/assets/css/sickness.css">{% endblock %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/sickness.css">{% endblock %}
 
 {% block content %}
-    <div class="container-lg container-md container-sm content-main">
-        <div class="row mx-1 d-flex flex-row justify-content-center">
-            <h1>Gestion de la "Peste Noire"</h1>
-            <div class="col-8 content-map">
-                <div class="map">
+
+    <section class="background">
+        <h1>Gestion de la "Peste Noire"</h1>
+        <div class="container-fluids">
+
+
+            <div class="row mx-1 d-flex flex-row justify-content-center ">
+                <div class="col-md-6 content-map d-flex justify-content-center">
                     <img class="" src="/assets/images/map.jpg">
                 </div>
-            </div>
 
-            <div class="col-lg-4 content-card d-flex flex-column overflow-auto country">
-            {% for data in datas %}
-                    <div class="card {{ data.country }} border w-50 mx-auto">
-                        <div class="backgound-blason">
-                            <img class="icon" src="/assets/images/icon.jpg">
+                <div class="col-md-6 content-card d-flex flex-column ">
+                    {% for data in datas %}
+                        <div class="card {{ data.country }} border mx-auto">
+                            <div>
+                                <img class="icon" src="/assets/images/icon.jpg">
+                                <img  class="logo" src="/assets/images/the-middle-ages.jpg">
+                                <h2>{{ data.country }}</h2>
+                                <ul>
+                                    <li>Capital: {{ data.capital_city }}</li>
+                                    <li>Nombre confirmé: {{ data.confirmed }}</li>
+                                    <li>Nombre de rétablis: {{ data.recovered }}</li>
+                                    <li>Nombre de morts: {{ data.deaths }}</li>
+                                </ul>
+                            </div>
 
-                            <img src="/assets/images/manuscrit.jpg">
                         </div>
-                        <h2>{{ data.country }}</h2>
-                        <ul class="data">
-                            <li>Capital: {{ data.capital_city }}</li>
-                            <li>Nombre confirmé: {{ data.confirmed }}</li>
-                            <li>Nombre de rétablis: {{ data.recovered }}</li>
-                            <li>Nombre de morts: {{ data.deaths }}</li>
-                        </ul>
-                    </div>
-            {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
-
+    </section>
 {% endblock %}
