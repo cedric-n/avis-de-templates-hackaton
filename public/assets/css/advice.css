@@ -1,9 +1,11 @@
+body {
+    background-color: var(--color-light);
+}
 .container {
     border: solid var(--text-color);
     background-color: rgba(169,146,125, 0.4);
     margin-top: var(--nav);
     margin-bottom: var(--spacing4);
-
 }
 p a {
     text-decoration: none;
