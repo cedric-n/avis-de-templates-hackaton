@@ -10,7 +10,17 @@ class SicknessManager
     {
         $client = HttpClient::create();
         $response = $client->request('GET', "https://covid-api.mmediagroup.fr/v1/cases?continent=Europe");
-        $content = $response->toArray();
-        return $content;
+        return $response->toArray();
+    }
+
+    public function getPrinciple()
+    {
+        $finalCountry = [];
+        $principles = ["France", "Holy See", "Italy", "United Kingdom", "Germany", "Spain"];
+        $countries = $this->getApi();
+        foreach ($principles as $principle) {
+            $finalCountry[] = $countries[$principle]['All'];
+        }
+        return $finalCountry;
     }
 }
