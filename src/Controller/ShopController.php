@@ -20,6 +20,7 @@ class ShopController extends AbstractController
     {
         $shopManager = new ShopManager();
         $select = $shopManager->selectOneById($id);
+
         return $this->twig->render('Shop/choice.html.twig', [
             'item' => $select,
         ]);
@@ -27,6 +28,13 @@ class ShopController extends AbstractController
 
     public function validate()
     {
-        return $this->twig->render('Shop/validate.html.twig');
+        $profil = [];
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $profil = array_map('trim', $_POST);
+        }
+        return $this->twig->render('Shop/validate.html.twig', [
+            'profil' => $profil,
+        ]);
     }
 }

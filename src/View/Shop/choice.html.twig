@@ -10,14 +10,19 @@
             <div class="row justify-content-center">
                 <div class="card-selection col-11 col-md-3">
                     <p>Vous avez sélectionner</p>
-                    <img class="card-img-top" src="/assets/images/{{ item.url }}" alt="Card image cap">
+                    <img class="card-img-top" src="/uploads/{{ item.url }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{ item.name }}</h5>
                         <p class="card-text"></p>
+                        <ul>
+                            {% for error in errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
                 <div class="card-selection col-11 col-md-3">
-                    <form action="">
+                    <form action="/shop/validate/{{ item.id }}" method="post">
                         <label for="lastname">Nom : </label>
                         <input type="text" name="lastname" id="lastname">
                         <label for="firstname">Nom : </label>
@@ -27,7 +32,7 @@
                         <input type="text" name="street" id="street">
                         <label for="city">Ville / Château : </label>
                         <input type="text" name="city" id="city">
-                        <a href="/shop/validate/{{ item.id }}" class="btn btn-primary">Valider</a>
+                        <button class="btn btn-primary">Valider</button>
                         <a href="/shop/shop/{{ item.id }}" class="btn btn-primary">Revenir</a>
                     </form>
                 </div>
