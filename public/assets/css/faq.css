@@ -6,20 +6,23 @@
     padding: var(--spacing3);
 }
 
-article, .btn-group {
-    margin: var(--spacing3);
+.article, .btn-group {
+    margin-top: var(--spacing3);
+    margin-bottom: var(--spacing3);
+
 }
 
-p {
+.paragraph {
     text-align: justify;
 }
 
-a {
+.link {
     text-decoration: none;
-    color: var(--color-dark);
+    color: var(--text-color);
+    font-weight: 800;
 }
 
-a:hover {
+.link:hover {
     text-decoration: none;
     color: var(--hover);
 }
