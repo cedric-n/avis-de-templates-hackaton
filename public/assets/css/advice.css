@@ -6,14 +6,14 @@
 }
 
 p a {
-    text-decoration: none;
-    font-weight: 800;
+    text-decoration: underline;
     color: #5E503F;
-
+    font-weight: 800;
 }
+
 a:hover {
     color: var(--hover);
-    text-decoration: none;
+    text-decoration: underline;
 }
 .submit-button {
     background-color: var(--color-dark);
