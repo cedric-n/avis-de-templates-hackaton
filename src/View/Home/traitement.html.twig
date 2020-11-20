@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig'%}
+
+{% block title %}Formulaire{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
+{% endblock %}
+{% block content %}
+    <div class="container">
+
+        <h1>DÉCRET DE DÉPLACEMENT DÉROGATOIRE</h1>
+
+        <p>En application du décret n°1347-01 du 29 octobre 1347 prescrivant les mesuresgénérales nécessaires pour faire
+            face à l'épidémie de la Peste dans le cadre duroyaume d'urgence sanitaire de la plèbe.</p>
+        <br>
+        <h2>Je soussigné(e), Mme/M. :</h2>
+            <p>{{ persons.lastname }}  {{ persons.firstname }} </p>
+        <h2>Né(e) le :</h2>
+        <p>{{ persons.birthday }}</p>
+        <h2>à :</h2>
+        <p>{{ persons.country }}</p>
+        <h2>Demeurant :</h2>
+        <p>{{ persons.address }}</p>
+        <h2>certifie que mon déplacement est lié au motif:</h2>
+        <p>{{ persons.choice }}</p>
+        <p>Tampon : </p>
+        <button class="submit-button">Imprimer</button>
+    </div>
+{% endblock %}

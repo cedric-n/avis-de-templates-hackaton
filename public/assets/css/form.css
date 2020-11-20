@@ -30,6 +30,3 @@ a:hover {
 .alert:empty {
     display: none;
 }
-form .form-control {
-    color: var(--color-dark);
-}

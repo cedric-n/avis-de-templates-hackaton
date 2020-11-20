@@ -11,48 +11,128 @@
 {% block content %}
 
     <div class="container">
-        <h1>Les conseils Peste </h1>
-        <div class="confinement">
-            <h2>Appliquer les gestes barrières et le confinement</h2>
-            <p>Les gestes barrières sont une bonne pratique destinée à limiter la propagation d’un agent pathogène,
-                notamment en situation de pandémie.</p>
-            <ul>
-                <li>Se laver régulièrement les mains et les pieds  ou même tout court, pour éviter les odeurs et les contaminations</li>
-                <li>Tousser ou éternuer dans son masque le bec à été pensez avec un grand réservoir ou dans un mouchoir</li>
-                <li>Porter correctement un bec quand la distance ne peut pas être respectée
-                    et dans les lieux où cela est obligatoire</li>
-                <li>Respecter une distance d’au moins un mètre virgule cinquante-six centimètres et quatre-vingt cinq millimètres
-                    avec les autres</li>
-                <li>Utiliser l'outils numérique (StopPeste)</li>
-            </ul>
-            <p>L'interdiction de déplacement en France, vulgarisée par les crieurs de rue par l'expression « confinement de la
-                population » ou « confinement national », est une mesure sanitaire mise en place pour la première fois
-                du 17 mars à 12 h au 11 mai 1347 (55 jours, soit 1 mois et 25 jours), et une deuxième fois à partir du
-                30 octobre 1347, s'insère dans un ensemble de politiques de restrictions de contacts de la plèbe et de
-                déplacements en réponse à la pandémie de la Peste47 en France.
-                Après une campagne sanitaire de recommandation des « gestes barrières » hygiéniques et de distanciation
-                physique, la décision d'un premier confinement au niveau national est annoncée au soir du lundi 16 mars
-                1347 par le roi Philippe de vallois philou pour les intimes, lors d'un meet à la nation. Il indique à
-                plusieurs reprises que la France est en « guerre sanitaire » contre la Peste47, alors que le pays, au
-                « stade 3 » des mesures sanitaires gouvernementales, est en pleine expansion épidémique. </p>
-        </div>
-        <div class="authorise">
-            <h2>Dans quels cas suis-je autorisé à sortir ?</h2>
-            <ul>
-                <li>Déplacements, pour aller traire la chèvre du voisin</li>
-                <li>Déplacements, pour effectuer les récoltes des champs </li>
-                <li>Déplacements, pour assistance à la femme du voisin qui est toujours seule à la maison</li>
-                <li>Pour voir la liste compléte regarde le pdf: UX/20</li>
-            </ul>
-            <p>Vous devez sortir pour l'une de ces raisons ?
-                <a href="/Form/attestation.pdf" target="_blank" download="attestation.pdf" title="attestation">
-                    Télécharge le formulaire pour sortir</a> </p>
-        </div>
-        <div class="track-down">
-            <h2>Le dépistage de la Peste-47</h2>
-            <p> Les tests virologiques (RT-PCR) permettent de déterminer si une personne est porteuse du virus au moment
-                du test, grâce à un prélèvement par voie nasale ou salivaire. Le résultat est en général disponible dans
-                les 24 heures qui suivent.</p>
-        </div>
+    <ul class="alert alert-danger">
+        {%- for error in errors -%}
+            <li>{{ error }}</li>
+        {%- endfor -%}
+    </ul>
+    <h1>Les conseils Peste </h1>
+    <div class="confinement">
+        <h2>Appliquer les gestes barrières et le confinement</h2>
+        <p>Les gestes barrières sont une bonne pratique destinée à limiter la propagation d’un agent pathogène,
+            notamment en situation de pandémie.</p>
+        <ul>
+            <li>Se laver régulièrement les mains et les pieds ou même tout court, pour éviter les odeurs et les
+                contaminations
+            </li>
+            <li>Tousser ou éternuer dans son masque le bec à été pensez avec un grand réservoir ou dans un
+                mouchoir
+            </li>
+            <li>Porter correctement un bec quand la distance ne peut pas être respectée
+                et dans les lieux où cela est obligatoire
+            </li>
+            <li>Respecter une distance d’au moins un mètre virgule cinquante-six centimètres et quatre-vingt cinq
+                millimètres
+                avec les autres
+            </li>
+            <li>Utiliser l'outils numérique (StopPeste)</li>
+        </ul>
+        <p>L'interdiction de déplacement en France, vulgarisée par les crieurs de rue par l'expression « confinement
+            de
+            la
+            population » ou « confinement national », est une mesure sanitaire mise en place pour la première fois
+            du 17 mars à 12 h au 11 mai 1347 (55 jours, soit 1 mois et 25 jours), et une deuxième fois à partir du
+            30 octobre 1347, s'insère dans un ensemble de politiques de restrictions de contacts de la plèbe et de
+            déplacements en réponse à la pandémie de la Peste47 en France.
+            Après une campagne sanitaire de recommandation des « gestes barrières » hygiéniques et de distanciation
+            physique, la décision d'un premier confinement au niveau national est annoncée au soir du lundi 16 mars
+            1347 par le roi Philippe de vallois philou pour les intimes, lors d'un meet à la nation. Il indique à
+            plusieurs reprises que la France est en « guerre sanitaire » contre la Peste47, alors que le pays, au
+            « stade 3 » des mesures sanitaires gouvernementales, est en pleine expansion épidémique. </p>
+    </div>
+    <div class="authorise">
+        <h2>Dans quels cas suis-je autorisé à sortir ?</h2>
+        <ul>
+            <li>Déplacements, pour aller traire la chèvre du voisin</li>
+            <li>Déplacements, pour effectuer les récoltes des champs</li>
+            <li>Déplacements, pour assistance à la femme du voisin qui est toujours seule à la maison</li>
+            <li>Pour voir la liste compléte regarde le formulaire/20</li>
+        </ul>
+        <p>Vous devez sortir pour l'une de ces raisons ?</p>
+        <h2> Remplissez le formulaire</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="lastname">Nom</label>
+                <input class="form-control" type="text" name="lastname" id="lastname" placeholder="De Vallou"
+                       value="{{ persons.lastname ?? '' }}">
+            </div>
+            <div class="form-group">
+                <label for="firstname">Prénom</label>
+                <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Phillou"
+                       value="{{ persons.firstname ?? '' }}">
+            </div>
+            <div class="form-group">
+                <label for="country"> Fait à</label>
+                <input class="form-control" type="text" name="country" id="country" placeholder="Chambord"
+                       value="{{ persons.country ?? '' }}">
+            </div>
+            <div class="form-group">
+                <label for="birthday">Date de naissance</label>
+                <input class="form-control" type="date" name="date" id="date"
+                       value="{{ persons.birthday ?? '' }}">
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse</label>
+                <input class="form-control" type="text" name="address" id="address" placeholder="1347 rue de la peste 45000 Paris"
+                       value="{{ persons.address ?? '' }}">
+            </div>
+            <div class="form-group">
+                <label for="choice">Motif de sortie: </label>
+                <select name="choice" id="choice">
+                    <option value="">--Option de motif--</option>
+                    <option value="Déplacements entre le domicile du voisin et le sien.">
+                        Déplacements entre le domicile du voisin et le sien
+                    </option>
+                    <option value="Déplacements pour effectuer les récoltes des champs (Didier)">
+                        Déplacements pour effectuer les récoltes des champs(Didier)
+                    </option>
+                    <option value="Consultations, examens et soins ne pouvant être assurés à distance.">
+                        Consultations, examens et soins ne pouvant être assurés à distance
+                    </option>
+                    <option value="Déplacements pour traiter la chèvre ou la vache du voisin.">
+                        Déplacements pour traiter la chèvre ou la vache du voisin
+                    </option>
+                    <option value="Déplacement des personnes en situation de handicap et leur accompagnant.">
+                        Déplacement des personnes en situation de handicap et leur accompagnant
+                    </option>
+                    <option value="Déplacements brefs, dans la limite de vingt seconde quotidienne et dans un rayon maximal
+                     de trente centimètre autour du patelin, liés soit à l'activité physique collective des personnes,
+                     à l'exclusion de toute pratique autre que sportive et de toute proximité avec d'autres personnes,
+                     soit à la promenade avec les seules personnes regroupées dans un même domicile ou voisinage, soit
+                     aux besoins des animaux de compagnie.">
+                        Déplacements brefs
+                    </option>
+                    <option value="Participation à des missions d'intérêt général sur demande de l'autorité royale.">
+                        Participation à des missions d'intérêt général sur demande de l'autorité royale
+                    </option>
+                    <option value="Déplacement pour chercher les marmots à l’école et à l’occasion de leurs activitésde travaux d’intérêt générales.">
+                        Aller chercher ses marmots
+                    </option>
+                </select>
+            </div>
+            <button class="btn btn-lg submit-button">Générer l'attestation</button>
+        </form>
+
+
+        <p>Ou télécharge le
+            <a href="/Form/attestation.pdf" target="_blank" download="attestation.pdf" title="attestation">
+                ici</a></p>
+    </div>
+    <div class="track-down">
+        <h2>Le dépistage de la Peste-47</h2>
+        <p> Les tests virologiques (RT-PCR) permettent de déterminer si une personne est porteuse du virus au moment
+            du test, grâce à un prélèvement par voie nasale ou salivaire. Le résultat est en général disponible dans
+            les 24 heures qui suivent.</p>
+    </div>
     <div>
 {% endblock %}
