@@ -1,7 +1,7 @@
 .container {
     margin-top: var(--nav);
     border: solid var(--text-color);
-    background-color: rgba(169,146,125, 0.4);
+    background-image: var(--background-img) ;
     margin-bottom: var(--spacing4);
 }
 
