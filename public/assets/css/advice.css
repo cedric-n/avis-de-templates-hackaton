@@ -10,6 +10,7 @@ p a {
     color: #5E503F;
     font-weight: 800;
 }
+
 a:hover {
     color: var(--hover);
     text-decoration: underline;
