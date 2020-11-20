@@ -7,17 +7,17 @@
 {% block content %}
     <section class="section-shop">
         <h1>Boutique</h1>
-        <p>Vous trouverez ci-joint une selection de nos meilleurs articles afin de faire face à la pandémie</p>
+        <p>Suite à l'annonce du roi chaque citoyen à la possibilité d'obtenir un masque gratuitement. Vous trouverez ci-joint une selection de nos meilleurs articles afin de faire face à la pandémie</p>
         <p>Tout est gratuit jusqu'à la caisse !!!</p>
         <div class="container">
             <div class="row justify-content-between">
                 {% for item in items %}
                     <div class="card col-11 col-md-3">
-                        <img class="card-img-top" src="/assets/images/{{ item.url }}" alt="Card image cap">
+                        <img class="card-img-top" src="/uploads/{{ item.url }}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">{{ item.name }}</h5>
                             <p class="card-text"></p>
-                            <a href="/shop/choice/{{ item.id }}" class="btn btn-primary">Acheter</a>
+                            <a href="/shop/choice/{{ item.id }}" class="btn btn-primary">Sélectionner</a>
                         </div>
                     </div>
                 {% endfor %}

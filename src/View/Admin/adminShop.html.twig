@@ -1,0 +1,76 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/admin.css">
+{% endblock %}
+
+{% block content %}
+    <section class="shop">
+        <h2 class="title-light">Administration Boutique</h2>
+        <div class="container">
+            <div class="row">
+                <div class="administration-button-add col-1 offset-7 offset-sm-9 offset-lg-10 mb-lg-5">
+                    <button type="button" class="btn btn-primary button-light" data-toggle="modal" data-target="#modalForm{{ store.id }}">Ajouter</button>
+                </div>
+                <div>
+                    <div class="modal fade" id="modalForm{{ store.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un nouveau masque</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="/PrivateShop/add" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="id" value="{{ competition.id }}">
+                                        <ul>
+                                        {% for error in errors %}
+                                            <li>{{ error }}</li>
+                                        {% endfor %}
+                                        </ul>
+                                        <div>
+                                            <label for="picture">Image</label>
+                                            <input type="file" name="picture" id="picture">
+                                        </div>
+                                        <div>
+                                            <label for="name">Titre</label>
+                                            <input type="text" name="name" id="title">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                            <button type="submit" class="btn btn-primary button-light">Ajouter</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% for item in items %}
+                <div class="administration-block row justify-content-center">
+                    <div class="administration-picture col-12 mb-4 col-lg-4 mb-lg-5">
+                        <img class="administration-img" src="/uploads/{{ item.url }}" alt="Image archive">
+                    </div>
+                    <div class="administration-description col-12 mb-4 col-lg-5">
+                        <h3 class="card-title">{{ item.name }}</h3>
+                    </div>
+                    <form class="administration-button-delete offset-1 offset-lg-0" action="/PrivateShop/delete" method="post">
+                        <div>
+                            <input type="hidden" name="id" value="{{ item.id }}">
+                            <button class="btn btn-primary button-light">Supprimer</button>
+                        </div>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascript %}
+{% if errors is not empty %}
+<script src="/assets/js/openModal.js"></script>
+{% endif %}
+{% endblock %}

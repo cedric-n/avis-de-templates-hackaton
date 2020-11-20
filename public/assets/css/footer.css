@@ -22,4 +22,14 @@
     color: var(--text-color);
     font-family: var(--text-font);
 }
+.footer a:hover {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.sceau{
+    border-radius: 16px;
+    height: 100px;
+    text-align: center;
+}

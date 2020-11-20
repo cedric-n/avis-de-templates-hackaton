@@ -6,6 +6,19 @@
 
 {% block content %}
     <section class="section-choice">
-        <p>Merci beaucoup! Une calèche viendra vous déposer votre paquet dans les prochaines 24h !</p>
+        <div class="container">
+            <div class="row">
+                    <div class="card col">
+                        <div class="card-body">
+                            <p>Merci beaucoup! Une calèche viendra vous déposer votre paquet dans les prochaines 24h à l'adresse suivante</p>
+                            <p>Mr/Mlle : {{ profil.lastname }} {{ profil.firstname }}</p>
+                            <p>Rue : {{ profil.street }}</p>
+                            <p>Ville/Château : {{ profil.city }}</p>
+                            <a href="/Plague/index" class="btn btn-primary">Accueil</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
     </section>
 {% endblock %}

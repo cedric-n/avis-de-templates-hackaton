@@ -1,0 +1,26 @@
+
+
+.administration-button-add {
+    margin-bottom: var(--spacing3);
+}
+
+.administration h3 {
+    margin-bottom: var(--spacing2);
+}
+
+.administration-button-delete {
+    margin-bottom: var(--spacing4);
+}
+
+.administration img {
+    width: 100%;
+    display: block;
+}
+
+.modal-body input {
+    width: 100%;
+}
+
+.modal-body li {
+    color:red;
+}
