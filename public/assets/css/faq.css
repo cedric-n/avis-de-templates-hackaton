@@ -1,9 +1,8 @@
 .container {
     margin-top: var(--nav);
     border: solid var(--text-color);
-    background-color: rgba(169,146,125, 0.4);
+    background-image: var(--background-img) ;
     margin-bottom: var(--spacing4);
-    padding: var(--spacing3);
 }
 
 .article, .btn-group {
@@ -25,4 +24,14 @@
 .link:hover {
     text-decoration: none;
     color: var(--hover);
+}
+
+.title{
+    font-family: var(--title-font);
+    text-align: center;
+    padding-top: var(--spacing4);
+    padding-bottom: var(--spacing4);
+    color: var(--color-dark);
+    font-size: var(--h1-font-size);
+
 }
