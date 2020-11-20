@@ -10,13 +10,12 @@
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: underline;
     color: #5E503F;
     font-weight: 800;
 }
 
 .link:hover {
-    text-decoration: none;
     color: var(--hover);
 }
 

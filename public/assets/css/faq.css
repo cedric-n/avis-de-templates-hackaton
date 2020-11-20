@@ -16,13 +16,12 @@
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--text-color);
     font-weight: 800;
 }
 
 .link:hover {
-    text-decoration: none;
     color: var(--hover);
 }
 
