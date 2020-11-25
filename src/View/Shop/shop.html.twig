@@ -6,8 +6,8 @@
 
 {% block content %}
     <section class="section-shop">
-        <h1>Boutique</h1>
-        <p>Suite à l'annonce du roi chaque citoyen à la possibilité d'obtenir un masque gratuitement. Vous trouverez ci-joint une selection de nos meilleurs articles afin de faire face à la pandémie</p>
+        <h1>Shop</h1>
+        <p>Following the king's announcement every citizen has the possibility to get a mask for free. You will find enclosed a selection of our best articles to face the pandemic.</p>
         <div class="container">
             <div class="row justify-content-between">
                 {% for item in items %}
@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ item.name }}</h5>
                             <p class="card-text"></p>
-                            <a href="/shop/choice/{{ item.id }}" class="btn btn-primary">Sélectionner</a>
+                            <a href="/shop/choice/{{ item.id }}" class="btn btn-primary">Select</a>
                         </div>
                     </div>
                 {% endfor %}

@@ -1,6 +1,6 @@
 {% extends 'layout.html.twig'%}
 
-{% block title %}Formulaire{% endblock %}
+{% block title %}Form{% endblock %}
 
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -9,21 +9,21 @@
 {% block content %}
     <div class="container">
 
-        <h1>DÉCRET DE DÉPLACEMENT DÉROGATOIRE</h1>
+        <h1>DECREE OF DEROGATORY DISPLACEMENT</h1>
 
-        <p>En application du décret n°1347-01 du 29 octobre 1347 prescrivant les mesuresgénérales nécessaires pour faire
-            face à l'épidémie de la Peste dans le cadre duroyaume d'urgence sanitaire de la plèbe.</p>
+        <p>In application of decree n°1347-01 of 29 October 1347 prescribing the general measures necessary to make
+            in the face of the Plague epidemic in the context of the Plebian Health Emergency Kingdom</p>
         <br>
-        <h2>Je soussigné(e), Mme/M. :</h2>
+        <h2>I undersigned, Mrs/Mr. :</h2>
             <p>{{ persons.lastname }}  {{ persons.firstname }} </p>
-        <h2>le :</h2><p>{{ persons.date }}</p>
-        <h2>à :</h2>
+        <h2>the :</h2><p>{{ persons.date }}</p>
+        <h2>in :</h2>
         <p>{{ persons.country }}</p>
-        <h2>Demeurant :</h2>
+        <h2>Resident :</h2>
         <p>{{ persons.address }}</p>
-        <h2>certifie que mon déplacement est lié au motif:</h2>
+        <h2>certifies that my movement is related to the reason:</h2>
         <p>{{ persons.choice }}</p>
         <p>Tampon : </p>
-        <button class="submit-button">Imprimer</button>
+        <button class="submit-button">Print</button>
     </div>
 {% endblock %}

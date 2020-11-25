@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="card-selection col-11 col-md-3">
-                    <p>Vous avez sélectionner</p>
+                    <p>You have chosen</p>
                     <img class="card-img-top" src="/uploads/{{ item.url }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{ item.name }}</h5>
@@ -24,17 +24,17 @@
                 </div>
                 <div class="card-selection col-11 col-md-3">
                     <form action="/shop/validate/{{ item.id }}" method="post">
-                        <label for="lastname">Nom : </label>
+                        <label for="lastname">Lastname: </label>
                         <input type="text" name="lastname" id="lastname">
-                        <label for="firstname">Nom : </label>
+                        <label for="firstname">Firstname : </label>
                         <input type="text" name="firstname" id="firstname">
                         <p>adresse</p>
-                        <label for="street">Rue / chemin ; </label>
+                        <label for="street">Street : </label>
                         <input type="text" name="street" id="street">
-                        <label for="city">Ville / Château : </label>
+                        <label for="city">City / Castle : </label>
                         <input type="text" name="city" id="city">
-                        <button class="btn btn-primary">Valider</button>
-                        <a href="/shop/shop/{{ item.id }}" class="btn btn-primary">Revenir</a>
+                        <button class="btn btn-primary">Validate</button>
+                        <a href="/shop/shop/{{ item.id }}" class="btn btn-primary">Back</a>
                     </form>
                 </div>
             </div>
