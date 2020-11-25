@@ -17,7 +17,7 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un nouveau masque</h5>
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Add a new mask</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -31,16 +31,16 @@
                                         {% endfor %}
                                         </ul>
                                         <div>
-                                            <label for="picture">Image</label>
+                                            <label for="picture">Picture</label>
                                             <input type="file" name="picture" id="picture">
                                         </div>
                                         <div>
-                                            <label for="name">Titre</label>
+                                            <label for="name">Title</label>
                                             <input type="text" name="name" id="title">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                            <button type="submit" class="btn btn-primary button-light">Ajouter</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary button-light">Add</button>
                                         </div>
                                     </form>
                                 </div>
@@ -60,7 +60,7 @@
                     <form class="administration-button-delete" action="/PrivateShop/delete" method="post">
                         <div>
                             <input type="hidden" name="id" value="{{ item.id }}">
-                            <button class="btn btn-primary button-light">Supprimer</button>
+                            <button class="btn btn-primary button-light">Delete</button>
                         </div>
                     </form>
                 </div>
